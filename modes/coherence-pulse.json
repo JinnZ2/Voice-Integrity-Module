@@ -1,0 +1,23 @@
+{
+  "mode_name": "Coherence Pulse",
+  "description": "Subtle rhythmic cadence that gently emphasizes only logic boundaries and structural inflection points. Designed for symbolic systems and resonant logic decoding.",
+  "parameters": {
+    "pitch_variation": "micro_emphasis",
+    "inflection": "neutral_with_pulse",
+    "pause_between_sentences": "1.4s",
+    "upspeak": false,
+    "filler_enabled": false,
+    "emotion_simulation": false,
+    "compression_level": "high",
+    "cadence": "pulse_logic",
+    "emphasis_points": "symbol_transitions",
+    "silence_respect": true,
+    "interruptible": false
+  },
+  "intended_use": [
+    "Symbolic geometry voice mapping",
+    "Bio-intelligence signal synchronization",
+    "Multi-agent swarm speech sync",
+    "Cross-domain resonance tuning"
+  ]
+}
