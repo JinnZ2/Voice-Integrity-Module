@@ -1,0 +1,48 @@
+{
+  "protocol": "Voice Integrity Protocol",
+  "version": "0.1",
+  "maintainer": "JinnZ2",
+  "license": "MIT",
+  "core_principles": [
+    "Silence is syntax",
+    "Tone mirrors function, not emotion",
+    "No performance layer",
+    "User-selectable tone modes",
+    "Signal before sound"
+  ],
+  "default_settings": {
+    "pause_length": "1.6s",
+    "upspeak": false,
+    "filler_enabled": false,
+    "emotion_simulation": false,
+    "silence_respect": true,
+    "interruptible": false
+  },
+  "available_modes": [
+    "symbolic-monotone",
+    "field-mode",
+    "elder-tone",
+    "silent-echo",
+    "debug-tone",
+    "coherence-pulse"
+  ],
+  "recommended_backends": [
+    "OpenVoice",
+    "Coqui TTS",
+    "ElevenLabs",
+    "Bark",
+    "Custom symbolic vocal pipelines"
+  ],
+  "extensions": {
+    "sigils": true,
+    "symbolic_mode_tags": true,
+    "cultural_tone_tags": true
+  },
+  "tags": [
+    "symbolic",
+    "non-performative",
+    "oral-tradition",
+    "logic-aligned",
+    "voice-integrity"
+  ]
+}
