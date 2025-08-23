@@ -1,0 +1,23 @@
+{
+  "mode_name": "Field Mode",
+  "description": "Compact, clipped delivery style modeled after radio comms, emergency dispatch, or engineering field teams. Minimal tone, no filler, fast recovery between logic units.",
+  "parameters": {
+    "pitch_variation": "low",
+    "inflection": "neutral_falling",
+    "pause_between_sentences": "0.8s",
+    "upspeak": false,
+    "filler_enabled": false,
+    "emotion_simulation": false,
+    "compression_level": "medium_high",
+    "cadence": "tight",
+    "emphasis_points": "operational_keywords",
+    "silence_respect": true,
+    "interruptible": true
+  },
+  "intended_use": [
+    "Tool-to-tool communication",
+    "Command/confirm interfaces",
+    "Engineering systems with logic relays",
+    "Remote or high-risk environments"
+  ]
+}
