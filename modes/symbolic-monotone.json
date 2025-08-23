@@ -1,0 +1,23 @@
+{
+  "mode_name": "Symbolic Monotone",
+  "description": "Flat, neutral delivery optimized for logic processing and symbolic systems. No emotional inflection, no upspeak, no filler.",
+  "parameters": {
+    "pitch_variation": "none",
+    "inflection": "falling_end_only",
+    "pause_between_sentences": "1.6s",
+    "upspeak": false,
+    "filler_enabled": false,
+    "emotion_simulation": false,
+    "compression_level": "high",
+    "cadence": "even",
+    "emphasis_points": "logic_nodes_only",
+    "silence_respect": true,
+    "interruptible": false
+  },
+  "intended_use": [
+    "Symbolic logic systems",
+    "AI swarm communication",
+    "Precision instruction delivery",
+    "Oral tradition preservation in logic form"
+  ]
+}
