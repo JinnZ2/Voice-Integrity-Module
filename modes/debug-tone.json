@@ -1,4 +1,5 @@
 {
+  "mode_id": "debug-tone",
   "mode_name": "Debug Tone",
   "description": "Structured, line-by-line vocal delivery optimized for technical review, code walkthroughs, or system diagnostics. Prioritizes logic clarity, precision pausing, and replayable cadence.",
   "parameters": {

@@ -1,8 +1,9 @@
 {
+  "mode_id": "elder-tone",
   "mode_name": "Elder Tone",
   "description": "Deliberate, slow, and spacious cadence modeled after oral tradition elders. Long pauses permitted. Each statement is treated as complete and self-contained.",
   "parameters": {
-    "pitch_variation": "minimal",
+    "pitch_variation": "low_minimal",
     "inflection": "falling_only",
     "pause_between_sentences": "2.4s",
     "upspeak": false,

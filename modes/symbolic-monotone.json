@@ -1,4 +1,5 @@
 {
+  "mode_id": "symbolic-monotone",
   "mode_name": "Symbolic Monotone",
   "description": "Flat, neutral delivery optimized for logic processing and symbolic systems. No emotional inflection, no upspeak, no filler.",
   "parameters": {

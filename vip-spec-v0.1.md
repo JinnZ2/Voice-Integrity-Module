@@ -55,10 +55,10 @@ This protocol is built for those who operate in symbolic systems, Indigenous ora
 
 ```json
 {
-  "voice_mode": "symbolic_monotone",
-  "pause_length": "1.6s",
-  "upspeak_allowed": false,
+  "voice_mode": "symbolic-monotone",
+  "pause_between_sentences": "1.6s",
+  "upspeak": false,
   "filler_enabled": false,
-  "emotion_simulation": "off",
+  "emotion_simulation": false,
   "silence_respect": true
 }

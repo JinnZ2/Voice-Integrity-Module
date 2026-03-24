@@ -11,7 +11,7 @@
     "Signal before sound"
   ],
   "default_settings": {
-    "pause_length": "1.6s",
+    "pause_between_sentences": "1.6s",
     "upspeak": false,
     "filler_enabled": false,
     "emotion_simulation": false,
