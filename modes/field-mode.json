@@ -1,4 +1,5 @@
 {
+  "mode_id": "field-mode",
   "mode_name": "Field Mode",
   "description": "Compact, clipped delivery style modeled after radio comms, emergency dispatch, or engineering field teams. Minimal tone, no filler, fast recovery between logic units.",
   "parameters": {

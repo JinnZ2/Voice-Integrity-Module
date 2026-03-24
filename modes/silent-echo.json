@@ -1,4 +1,5 @@
 {
+  "mode_id": "silent-echo",
   "mode_name": "Silent Echo",
   "description": "Whispered or low-tone cadence with extended silences. Ideal for ritual, sacred, or contemplative systems. Uses breath, pause, and spacing as core structure.",
   "parameters": {
