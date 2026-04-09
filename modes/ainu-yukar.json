@@ -1,0 +1,24 @@
+{
+  "mode_id": "ainu-yukar",
+  "mode_name": "Ainu Yukar",
+  "description": "Prosodic mode honoring the Ainu yukar (epic oral poetry) tradition. Yukar are recited in rhythmic, pulsed patterns — each phrase carries a repetitive melodic contour that aids memory and transmission across generations. Delivery uses micro-emphasis at structural transitions reflecting the yukar's episodic pulse. Pauses mark narrative boundaries. This mode honors the Ainu principle that stories are not told but re-lived through voice.",
+  "parameters": {
+    "pitch_variation": "micro_emphasis",
+    "inflection": "neutral_with_pulse",
+    "pause_between_sentences": "2.2s",
+    "upspeak": false,
+    "filler_enabled": false,
+    "emotion_simulation": false,
+    "compression_level": "low",
+    "cadence": "pulse_logic",
+    "emphasis_points": "symbol_transitions",
+    "silence_respect": true,
+    "interruptible": false
+  },
+  "intended_use": [
+    "Preservation of Ainu yukar (epic poetry) prosodic patterns",
+    "Cultural voice interfaces honoring Indigenous Japanese oral tradition",
+    "Rhythmic narrative delivery systems for episodic oral literature",
+    "Endangered language revitalization tools"
+  ]
+}

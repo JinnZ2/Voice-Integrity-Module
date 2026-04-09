@@ -1,0 +1,24 @@
+{
+  "mode_id": "sami-joik",
+  "mode_name": "Sámi Joik",
+  "description": "Prosodic mode honoring the Sámi joik (luohti/vuolle) vocal tradition. Joik does not describe — it evokes. Delivery is breath-spaced, weighted, and unhurried with minimal pitch variation reflecting the sustained tonal quality of traditional joik. Silence between phrases is structural, not empty. This mode preserves the Sámi principle that voice carries presence, not performance.",
+  "parameters": {
+    "pitch_variation": "low_minimal",
+    "inflection": "soft_fall",
+    "pause_between_sentences": "2.4s",
+    "upspeak": false,
+    "filler_enabled": false,
+    "emotion_simulation": false,
+    "compression_level": "low",
+    "cadence": "weighted",
+    "emphasis_points": "wisdom_markers",
+    "silence_respect": true,
+    "interruptible": false
+  },
+  "intended_use": [
+    "Preservation of Sámi oral tradition prosodic patterns",
+    "Cultural voice interfaces honoring Northern Indigenous communication",
+    "Systems where breath-spacing and presence define structure",
+    "Endangered language revitalization tools"
+  ]
+}

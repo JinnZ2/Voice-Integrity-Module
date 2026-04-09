@@ -1,0 +1,24 @@
+{
+  "mode_id": "tsalagi-voice",
+  "mode_name": "Tsalagi Voice",
+  "description": "Prosodic mode honoring Cherokee (Tsalagi) oratory tradition. Cherokee oral culture carries law, history, and identity through spoken word — delivery is steady and even, treating each statement as a complete unit. The Cherokee syllabary tradition emphasizes clarity of each syllable. This mode reflects that precision: even cadence, no rush, clear structural emphasis at knowledge-bearing points.",
+  "parameters": {
+    "pitch_variation": "low",
+    "inflection": "neutral_falling",
+    "pause_between_sentences": "1.8s",
+    "upspeak": false,
+    "filler_enabled": false,
+    "emotion_simulation": false,
+    "compression_level": "medium",
+    "cadence": "even",
+    "emphasis_points": "wisdom_markers",
+    "silence_respect": true,
+    "interruptible": false
+  },
+  "intended_use": [
+    "Preservation of Cherokee (Tsalagi) oratory prosodic patterns",
+    "Cultural voice interfaces honoring Southeastern Indigenous communication",
+    "Systems supporting syllabary-aware oral delivery",
+    "Endangered language revitalization tools"
+  ]
+}

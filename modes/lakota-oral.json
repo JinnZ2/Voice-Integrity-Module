@@ -1,0 +1,24 @@
+{
+  "mode_id": "lakota-oral",
+  "mode_name": "Lakota Oral Tradition",
+  "description": "Prosodic mode honoring Lakota (Lakȟótiyapi) oral tradition. Lakota storytelling and ceremonial speech treat silence as sacred — the space between words is where understanding forms. Delivery is deeply spacious with minimal pitch variation and weighted cadence. Each statement stands alone as complete. This mode reflects the Lakota principle that true speech is unhurried and carries the weight of the people who spoke it before.",
+  "parameters": {
+    "pitch_variation": "low_minimal",
+    "inflection": "falling_only",
+    "pause_between_sentences": "2.6s",
+    "upspeak": false,
+    "filler_enabled": false,
+    "emotion_simulation": false,
+    "compression_level": "low",
+    "cadence": "weighted",
+    "emphasis_points": "wisdom_markers",
+    "silence_respect": true,
+    "interruptible": false
+  },
+  "intended_use": [
+    "Preservation of Lakota oral tradition prosodic patterns",
+    "Cultural voice interfaces honoring Great Plains Indigenous communication",
+    "Systems where silence is sacred and speech carries ancestral weight",
+    "Endangered language revitalization tools"
+  ]
+}

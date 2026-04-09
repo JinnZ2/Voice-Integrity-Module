@@ -1,0 +1,24 @@
+{
+  "mode_id": "hawaiian-oli",
+  "mode_name": "Hawaiian Oli",
+  "description": "Prosodic mode honoring the Hawaiian oli (chant) tradition. Oli is breath-structured — phrases are defined by the breath cycle, not by punctuation. Delivery is spacious and flowing with extended pauses at breath boundaries. Pitch is minimal and sustained, reflecting the oli principle that the voice carries mana (spiritual power) through steadiness, not variation. No word is more important than the space around it.",
+  "parameters": {
+    "pitch_variation": "low_minimal",
+    "inflection": "soft_fall",
+    "pause_between_sentences": "2.6s",
+    "upspeak": false,
+    "filler_enabled": false,
+    "emotion_simulation": false,
+    "compression_level": "ultra_low",
+    "cadence": "echoed_slow",
+    "emphasis_points": "none",
+    "silence_respect": true,
+    "interruptible": false
+  },
+  "intended_use": [
+    "Preservation of Hawaiian oli (chant) prosodic patterns",
+    "Cultural voice interfaces honoring Polynesian oral tradition",
+    "Breath-structured delivery systems where pause defines phrase",
+    "Endangered language revitalization tools"
+  ]
+}

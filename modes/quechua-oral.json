@@ -1,0 +1,24 @@
+{
+  "mode_id": "quechua-oral",
+  "mode_name": "Quechua Oral Tradition",
+  "description": "Prosodic mode honoring Quechua (Runasimi) oral tradition. Quechua — the language of the Inca and millions across the Andes — carries agricultural knowledge, cosmology, and communal memory through spoken word. Delivery is steady and even, reflecting the communal rhythm of ayni (reciprocity). No individual word dominates; the collective flow carries meaning. Emphasis falls at knowledge-bearing points where wisdom is transmitted.",
+  "parameters": {
+    "pitch_variation": "low_minimal",
+    "inflection": "falling_only",
+    "pause_between_sentences": "2.0s",
+    "upspeak": false,
+    "filler_enabled": false,
+    "emotion_simulation": false,
+    "compression_level": "medium",
+    "cadence": "even",
+    "emphasis_points": "wisdom_markers",
+    "silence_respect": true,
+    "interruptible": false
+  },
+  "intended_use": [
+    "Preservation of Quechua (Runasimi) oral tradition prosodic patterns",
+    "Cultural voice interfaces honoring Andean Indigenous communication",
+    "Communal rhythm delivery reflecting reciprocity principles",
+    "Endangered language revitalization tools"
+  ]
+}

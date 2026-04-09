@@ -30,7 +30,17 @@
     "autism-clarity",
     "blind-nav",
     "dyslexia-steady",
-    "hard-of-hearing"
+    "hard-of-hearing",
+    "sami-joik",
+    "dine-oral",
+    "tsalagi-voice",
+    "hawaiian-oli",
+    "maori-whaikorero",
+    "lakota-oral",
+    "ainu-yukar",
+    "quechua-oral",
+    "gaelic-bardic",
+    "aramaic-liturgical"
   ],
   "recommended_backends": [
     "OpenVoice",
@@ -50,6 +60,8 @@
     "oral-tradition",
     "logic-aligned",
     "voice-integrity",
-    "accessibility"
+    "accessibility",
+    "endangered-languages",
+    "language-preservation"
   ]
 }
