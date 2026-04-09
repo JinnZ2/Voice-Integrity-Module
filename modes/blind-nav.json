@@ -1,0 +1,24 @@
+{
+  "mode_id": "blind-nav",
+  "mode_name": "Blind Navigation",
+  "description": "Precise, spatially-aware delivery optimized for auditory-primary users. Controlled pitch variation marks hierarchy and section transitions. Emphasis on structural and navigational keywords supports orientation within content. Measured pacing allows processing without visual reference. Designed for blind and low-vision users who rely on voice as their primary information channel.",
+  "parameters": {
+    "pitch_variation": "low_controlled",
+    "inflection": "neutral_falling",
+    "pause_between_sentences": "1.6s",
+    "upspeak": false,
+    "filler_enabled": false,
+    "emotion_simulation": false,
+    "compression_level": "medium",
+    "cadence": "measured_chunks",
+    "emphasis_points": "function_markers",
+    "silence_respect": true,
+    "interruptible": true
+  },
+  "intended_use": [
+    "Blind and low-vision users navigating content by voice",
+    "Screen reader companion modes requiring structured vocal output",
+    "Auditory-primary interfaces where voice is the sole information channel",
+    "Spatial and hierarchical content delivery without visual cues"
+  ]
+}

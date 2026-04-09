@@ -1,0 +1,24 @@
+{
+  "mode_id": "autism-clarity",
+  "mode_name": "Autism Clarity",
+  "description": "Literal, predictable delivery with no tonal ambiguity. Flat pitch eliminates implied meaning. Consistent cadence and explicit structural markers reduce interpretation overhead. No performative warmth, sarcasm cues, or social tone layering. Designed for autistic users who benefit from direct, unambiguous vocal signals.",
+  "parameters": {
+    "pitch_variation": "none",
+    "inflection": "falling_end_only",
+    "pause_between_sentences": "1.8s",
+    "upspeak": false,
+    "filler_enabled": false,
+    "emotion_simulation": false,
+    "compression_level": "medium",
+    "cadence": "even",
+    "emphasis_points": "logic_nodes_only",
+    "silence_respect": true,
+    "interruptible": false
+  },
+  "intended_use": [
+    "Autistic users who prefer literal, direct communication",
+    "Environments where tonal ambiguity causes processing overhead",
+    "Systems requiring predictable and consistent vocal output",
+    "Accessibility interfaces prioritizing clarity over social performance"
+  ]
+}
