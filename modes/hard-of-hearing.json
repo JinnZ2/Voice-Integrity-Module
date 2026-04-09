@@ -1,0 +1,24 @@
+{
+  "mode_id": "hard-of-hearing",
+  "mode_name": "Hard of Hearing",
+  "description": "Clear, low-compression delivery with controlled pitch and strong sentence-terminal inflection to maximize auditory intelligibility. Extended pauses between sentences provide processing time and reduce signal overlap. Emphasis on key terms supports partial-hearing comprehension. Designed for deaf and hard-of-hearing users who use residual hearing or hearing-assisted devices.",
+  "parameters": {
+    "pitch_variation": "low_controlled",
+    "inflection": "block_terminal",
+    "pause_between_sentences": "2.0s",
+    "upspeak": false,
+    "filler_enabled": false,
+    "emotion_simulation": false,
+    "compression_level": "low",
+    "cadence": "measured_chunks",
+    "emphasis_points": "operational_keywords",
+    "silence_respect": true,
+    "interruptible": false
+  },
+  "intended_use": [
+    "Deaf and hard-of-hearing users with residual hearing",
+    "Hearing-assisted device compatibility requiring clear signal separation",
+    "Voice systems paired with captioning where pacing aids synchronization",
+    "Environments where auditory intelligibility is critical"
+  ]
+}

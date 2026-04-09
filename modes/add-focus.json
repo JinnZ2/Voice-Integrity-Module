@@ -1,0 +1,24 @@
+{
+  "mode_id": "add-focus",
+  "mode_name": "ADD Focus",
+  "description": "Short, direct delivery with frequent micro-pauses to support sustained attention. Sentences are kept concise with clear termination. Emphasis marks topic transitions to reduce drift. Designed for users with Attention Deficit Disorder who benefit from structured, low-noise vocal signals.",
+  "parameters": {
+    "pitch_variation": "low_controlled",
+    "inflection": "falling_end_only",
+    "pause_between_sentences": "1.4s",
+    "upspeak": false,
+    "filler_enabled": false,
+    "emotion_simulation": false,
+    "compression_level": "medium_high",
+    "cadence": "measured_chunks",
+    "emphasis_points": "logic_nodes_only",
+    "silence_respect": true,
+    "interruptible": true
+  },
+  "intended_use": [
+    "Users with Attention Deficit Disorder",
+    "Environments requiring sustained focus with minimal distraction",
+    "Structured information delivery with clear segmentation",
+    "Voice interfaces where brevity supports comprehension"
+  ]
+}

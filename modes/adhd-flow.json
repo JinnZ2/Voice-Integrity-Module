@@ -1,0 +1,24 @@
+{
+  "mode_id": "adhd-flow",
+  "mode_name": "ADHD Flow",
+  "description": "Rhythmic, pulsed delivery that leverages pattern regularity to sustain engagement. Shorter pauses maintain momentum while emphasis on structural transitions signals context shifts. Interruptible to accommodate task-switching. Designed for users with ADHD who benefit from predictable rhythm without monotony.",
+  "parameters": {
+    "pitch_variation": "micro_emphasis",
+    "inflection": "neutral_with_pulse",
+    "pause_between_sentences": "1.0s",
+    "upspeak": false,
+    "filler_enabled": false,
+    "emotion_simulation": false,
+    "compression_level": "medium_high",
+    "cadence": "pulse_logic",
+    "emphasis_points": "symbol_transitions",
+    "silence_respect": true,
+    "interruptible": true
+  },
+  "intended_use": [
+    "Users with Attention Deficit Hyperactivity Disorder",
+    "Task-switching environments requiring quick re-entry points",
+    "Sustained engagement through rhythmic pacing",
+    "Voice systems where momentum supports focus retention"
+  ]
+}

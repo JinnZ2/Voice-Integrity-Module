@@ -1,0 +1,24 @@
+{
+  "mode_id": "dyslexia-steady",
+  "mode_name": "Dyslexia Steady",
+  "description": "Slow, evenly-paced delivery with extended pauses between sentences to support auditory processing. Low compression ensures words are not rushed or blended. Emphasis on key terms aids word-level recognition. No rapid cadence shifts. Designed for users with dyslexia who benefit from steady, unhurried vocal pacing with clear word boundaries.",
+  "parameters": {
+    "pitch_variation": "low_minimal",
+    "inflection": "falling_only",
+    "pause_between_sentences": "2.2s",
+    "upspeak": false,
+    "filler_enabled": false,
+    "emotion_simulation": false,
+    "compression_level": "low",
+    "cadence": "weighted",
+    "emphasis_points": "operational_keywords",
+    "silence_respect": true,
+    "interruptible": false
+  },
+  "intended_use": [
+    "Users with dyslexia who process information through auditory channels",
+    "Read-aloud systems where pacing supports word recognition",
+    "Educational voice interfaces requiring deliberate delivery",
+    "Environments where steady rhythm reduces cognitive load"
+  ]
+}

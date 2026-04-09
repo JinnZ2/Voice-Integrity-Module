@@ -1,0 +1,24 @@
+{
+  "mode_id": "gaelic-bardic",
+  "mode_name": "Scottish Gaelic Bardic",
+  "description": "Prosodic mode honoring the Scottish Gaelic (Gàidhlig) bardic and storytelling tradition. The Gaelic bard carried clan history, genealogy, and law through voice — delivery was measured, weighted, and carried the authority of memory. This mode reflects the seanachaidh (tradition-bearer) style: deliberate pacing, neutral falling inflection, and emphasis at wisdom-bearing points. The voice does not perform — it remembers.",
+  "parameters": {
+    "pitch_variation": "low",
+    "inflection": "neutral_falling",
+    "pause_between_sentences": "2.2s",
+    "upspeak": false,
+    "filler_enabled": false,
+    "emotion_simulation": false,
+    "compression_level": "low",
+    "cadence": "weighted",
+    "emphasis_points": "wisdom_markers",
+    "silence_respect": true,
+    "interruptible": false
+  },
+  "intended_use": [
+    "Preservation of Scottish Gaelic bardic prosodic patterns",
+    "Cultural voice interfaces honoring Celtic oral tradition",
+    "Systems where voice carries genealogical and legal memory",
+    "Endangered language revitalization tools"
+  ]
+}

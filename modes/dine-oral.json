@@ -1,0 +1,24 @@
+{
+  "mode_id": "dine-oral",
+  "mode_name": "Diné Oral Tradition",
+  "description": "Prosodic mode reflecting Diné (Navajo) oral tradition and ceremonial speech. Diné Bizaad is a tonal language where pitch carries grammatical meaning — this mode uses controlled pitch to honor that precision. Delivery is measured and deliberate, with extended pauses reflecting the Diné principle that words spoken carry weight and should not be rushed. Silence between statements is respect, not absence.",
+  "parameters": {
+    "pitch_variation": "low_controlled",
+    "inflection": "falling_end_only",
+    "pause_between_sentences": "2.0s",
+    "upspeak": false,
+    "filler_enabled": false,
+    "emotion_simulation": false,
+    "compression_level": "medium",
+    "cadence": "measured_chunks",
+    "emphasis_points": "logic_nodes_only",
+    "silence_respect": true,
+    "interruptible": false
+  },
+  "intended_use": [
+    "Preservation of Diné (Navajo) oral tradition prosodic patterns",
+    "Cultural voice interfaces honoring Southwestern Indigenous communication",
+    "Tonal language-aware delivery where pitch precision matters",
+    "Endangered language revitalization tools"
+  ]
+}

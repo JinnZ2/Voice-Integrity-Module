@@ -24,7 +24,23 @@
     "elder-tone",
     "silent-echo",
     "debug-tone",
-    "coherence-pulse"
+    "coherence-pulse",
+    "add-focus",
+    "adhd-flow",
+    "autism-clarity",
+    "blind-nav",
+    "dyslexia-steady",
+    "hard-of-hearing",
+    "sami-joik",
+    "dine-oral",
+    "tsalagi-voice",
+    "hawaiian-oli",
+    "maori-whaikorero",
+    "lakota-oral",
+    "ainu-yukar",
+    "quechua-oral",
+    "gaelic-bardic",
+    "aramaic-liturgical"
   ],
   "recommended_backends": [
     "OpenVoice",
@@ -43,6 +59,9 @@
     "non-performative",
     "oral-tradition",
     "logic-aligned",
-    "voice-integrity"
+    "voice-integrity",
+    "accessibility",
+    "endangered-languages",
+    "language-preservation"
   ]
 }

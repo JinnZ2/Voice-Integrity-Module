@@ -1,0 +1,24 @@
+{
+  "mode_id": "aramaic-liturgical",
+  "mode_name": "Aramaic Liturgical",
+  "description": "Prosodic mode honoring the Aramaic oral and liturgical tradition. Aramaic — once the lingua franca of the ancient Near East — survives primarily through liturgical recitation in Syriac, Mandaic, and Neo-Aramaic communities. Delivery is slow, reverent, and deeply spacious, reflecting centuries of sacred oral transmission. Extended pauses between phrases honor the liturgical principle that sacred text is not read but intoned — the silence between words is where meaning settles.",
+  "parameters": {
+    "pitch_variation": "low_minimal",
+    "inflection": "falling_only",
+    "pause_between_sentences": "2.8s",
+    "upspeak": false,
+    "filler_enabled": false,
+    "emotion_simulation": false,
+    "compression_level": "ultra_low",
+    "cadence": "echoed_slow",
+    "emphasis_points": "wisdom_markers",
+    "silence_respect": true,
+    "interruptible": false
+  },
+  "intended_use": [
+    "Preservation of Aramaic liturgical prosodic patterns",
+    "Cultural voice interfaces honoring ancient Near Eastern oral tradition",
+    "Sacred text delivery where intoning defines structure",
+    "Endangered language revitalization tools"
+  ]
+}

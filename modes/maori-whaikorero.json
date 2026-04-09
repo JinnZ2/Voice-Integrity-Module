@@ -1,0 +1,24 @@
+{
+  "mode_id": "maori-whaikorero",
+  "mode_name": "Māori Whaikōrero",
+  "description": "Prosodic mode honoring Māori whaikōrero (formal oratory) tradition. Whaikōrero is structured, deliberate, and carries the weight of whakapapa (genealogy) and tikanga (protocol). Delivery is weighted with strong falling inflection marking declarative authority. Emphasis falls on wisdom-bearing words. Pauses are not hesitation — they are the space where the listener receives. This mode reflects the marae (meeting ground) principle: every word spoken is accountable.",
+  "parameters": {
+    "pitch_variation": "low",
+    "inflection": "falling_only",
+    "pause_between_sentences": "2.0s",
+    "upspeak": false,
+    "filler_enabled": false,
+    "emotion_simulation": false,
+    "compression_level": "medium",
+    "cadence": "weighted",
+    "emphasis_points": "wisdom_markers",
+    "silence_respect": true,
+    "interruptible": false
+  },
+  "intended_use": [
+    "Preservation of Māori whaikōrero (oratory) prosodic patterns",
+    "Cultural voice interfaces honoring Aotearoa oral tradition",
+    "Systems where spoken authority and genealogical weight define delivery",
+    "Endangered language revitalization tools"
+  ]
+}
