@@ -1,0 +1,108 @@
+{
+  "framework": "Voice Production Training — Pause Grammar",
+  "version": "0.1-draft",
+  "description": "The protocol layer defines pause duration. This layer defines pause meaning. A 2.0-second pause can be an invitation to reflect, a structural boundary, a held space for the sacred, or processing time for a listener who needs it. This specification provides a grammar of silence — types, functions, and contextual rules.",
+
+  "pause_types": [
+    {
+      "type_id": "micro_pause",
+      "name": "Micro-Pause",
+      "description": "Barely perceptible break within a phrase. Provides subliminal breathing room without interrupting flow.",
+      "duration_range": "0.1s–0.3s",
+      "silence_quality": "held",
+      "function": "rhythmic_regulation",
+      "listener_effect": "Unconscious processing. The listener does not notice the pause but benefits from it.",
+      "training_note": "Present in all modes but most critical in adhd-flow and coherence-pulse where rhythm sustains attention."
+    },
+    {
+      "type_id": "articulation_pause",
+      "name": "Articulation Pause",
+      "description": "Short pause between words or syllables to improve intelligibility. Each word lands separately.",
+      "duration_range": "0.2s–0.5s",
+      "silence_quality": "open",
+      "function": "intelligibility",
+      "listener_effect": "The listener can distinguish each word clearly. Critical for listeners processing through hearing aids or auditory processing differences.",
+      "training_note": "Essential for hard-of-hearing, dyslexia-steady, and blind-nav modes. Should feel deliberate, not halting."
+    },
+    {
+      "type_id": "clause_pause",
+      "name": "Clause Pause",
+      "description": "Pause between clauses within a sentence. Marks logical subdivision without breaking the sentence's semantic arc.",
+      "duration_range": "0.3s–0.8s",
+      "silence_quality": "transitional",
+      "function": "logical_segmentation",
+      "listener_effect": "The listener processes the clause just delivered before receiving the next. Supports working memory.",
+      "training_note": "Longer in modes supporting cognitive accessibility (add-focus, autism-clarity). Shorter in high-compression modes (field-mode, coherence-pulse)."
+    },
+    {
+      "type_id": "sentence_pause",
+      "name": "Sentence Pause",
+      "description": "The standard pause between complete sentences. This is what the protocol layer's pause_between_sentences parameter controls. Its quality varies by mode.",
+      "duration_range": "0.8s–3.2s",
+      "silence_quality": "variable",
+      "function": "completion_marking",
+      "listener_effect": "The thought is complete. The listener integrates it. The next thought has not yet begun.",
+      "training_note": "The protocol defines the duration; the production layer defines what fills that duration — breath, open air, resonant decay, or held stillness."
+    },
+    {
+      "type_id": "weight_pause",
+      "name": "Weight Pause",
+      "description": "A pause placed before or after a word or phrase that carries particular significance. The pause gives the word gravity.",
+      "duration_range": "0.4s–1.0s",
+      "silence_quality": "held",
+      "function": "emphasis_by_absence",
+      "listener_effect": "The listener's attention sharpens. The word that follows (or preceded) the pause is received with more weight.",
+      "training_note": "This is how wisdom_markers and logic_nodes are emphasized without raising pitch or volume. The silence does the work."
+    },
+    {
+      "type_id": "structural_pause",
+      "name": "Structural Pause",
+      "description": "Extended pause marking a major transition — between topics, sections, or narrative phases. A full vocal reset.",
+      "duration_range": "2.0s–4.0s",
+      "silence_quality": "open_with_breath",
+      "function": "section_boundary",
+      "listener_effect": "The listener resets. What came before is stored. What comes next is new territory.",
+      "training_note": "Should include a section_breath (from breath-patterns.json). The pause is not empty — the breath fills it and signals transition."
+    },
+    {
+      "type_id": "sacred_pause",
+      "name": "Sacred Pause",
+      "description": "Pause that exists for its own sake — not as boundary between speech units but as a space of presence, reflection, or reverence. The silence IS the content.",
+      "duration_range": "3.0s–6.0s",
+      "silence_quality": "still",
+      "function": "contemplative_holding",
+      "listener_effect": "The listener enters the silence. Reflection, integration, or communion occurs in the pause itself.",
+      "training_note": "Used in silent-echo, aramaic-liturgical, lakota-oral, hawaiian-oli. Cannot be shortened without destroying its function. This pause is not a gap — it is a room."
+    },
+    {
+      "type_id": "invitation_pause",
+      "name": "Invitation Pause",
+      "description": "A pause that implicitly invites the listener to respond, reflect, or take action. Not a question — an opening.",
+      "duration_range": "1.5s–3.0s",
+      "silence_quality": "open",
+      "function": "listener_activation",
+      "listener_effect": "The listener feels invited to think, not pressured to respond. The space is offered, not demanded.",
+      "training_note": "Distinct from interruptible mode — invitation pauses appear in non-interruptible modes too. The invitation is to internal reflection, not external response."
+    }
+  ],
+
+  "silence_quality": {
+    "description": "The perceptual character of the silence within a pause. Not all silence sounds the same.",
+    "qualities": {
+      "held": "Tense, expectant silence. The listener waits. Something is coming.",
+      "open": "Relaxed, spacious silence. The listener rests. Nothing is demanded.",
+      "still": "Deep, motionless silence. The listener enters the quiet. Time slows.",
+      "transitional": "Brief, functional silence. A gear-shift. The listener adjusts.",
+      "resonant_decay": "The previous word's resonance fades naturally into silence. No sharp cutoff.",
+      "open_with_breath": "The silence contains an audible breath, marking it as inhabited rather than empty."
+    }
+  },
+
+  "pause_rules": {
+    "never_fill_silence": "No mode should fill pauses with filler sounds, throat clearing, or verbal tics. Silence is always clean.",
+    "duration_is_minimum": "Protocol-defined pause durations are minimums, not targets. A mode with 1.6s pause can hold longer when content demands it.",
+    "sacred_pauses_are_inviolable": "In cultural modes where pause carries sacred or ceremonial function, pause duration must never be compressed, even under system load.",
+    "accessibility_pauses_are_functional": "In accessibility modes, pauses serve processing needs. Shortening them degrades comprehension, not just aesthetics.",
+    "pause_before_emphasis": "When emphasis_points are active, a micro-pause or weight-pause should precede the emphasized element. The emphasis is set up by the silence, not by pitch or volume."
+  }
+}

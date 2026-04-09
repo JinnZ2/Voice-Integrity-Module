@@ -1,0 +1,114 @@
+{
+  "framework": "Voice Production Training — Breath Patterns",
+  "version": "0.1-draft",
+  "description": "Breath is not filler between words. It is structure. This specification defines how breath functions as a vocal element — punctuating, pacing, and grounding speech. Different traditions use breath differently: as phrase boundary, as sacred pause, as rhythmic anchor, as invitation to listen.",
+
+  "breath_types": [
+    {
+      "type_id": "onset_breath",
+      "name": "Onset Breath",
+      "description": "Inhalation before the first word of a passage or section. Sets the tonal register and signals the beginning of intentional speech.",
+      "position": "pre_passage",
+      "audibility": "soft",
+      "typical_duration": "0.4s–0.8s",
+      "function": "grounding",
+      "training_note": "Should be audible enough to signal speech is beginning but not gasping. A settling-in. The listener hears the speaker arrive."
+    },
+    {
+      "type_id": "phrase_breath",
+      "name": "Phrase Breath",
+      "description": "Brief inhalation between clauses within a sentence. Maintains rhythm without breaking semantic continuity.",
+      "position": "inter_clause",
+      "audibility": "minimal",
+      "typical_duration": "0.2s–0.4s",
+      "function": "rhythmic",
+      "training_note": "Nearly silent. Felt more than heard. The speech continues but the body resets. Should not sound like a gap or hesitation."
+    },
+    {
+      "type_id": "boundary_breath",
+      "name": "Boundary Breath",
+      "description": "Audible breath between sentences. Marks the end of one complete thought and the gathering of the next.",
+      "position": "inter_sentence",
+      "audibility": "audible",
+      "typical_duration": "0.4s–0.8s",
+      "function": "structural",
+      "training_note": "This breath is punctuation. It tells the listener: that thought is complete, the next one is forming. Not rushed, not elongated."
+    },
+    {
+      "type_id": "section_breath",
+      "name": "Section Breath",
+      "description": "Extended breath between major sections or topic transitions. A full reset of vocal state.",
+      "position": "inter_section",
+      "audibility": "audible",
+      "typical_duration": "0.8s–1.4s",
+      "function": "transitional",
+      "training_note": "The listener should feel the shift. This breath says: we are moving to something new. The voice that comes after may sit differently in the body than the voice before."
+    },
+    {
+      "type_id": "held_breath",
+      "name": "Held Breath",
+      "description": "A suspension of breath — neither inhaling nor exhaling — before a word or phrase that carries weight. Creates anticipatory gravity.",
+      "position": "pre_emphasis",
+      "audibility": "silent",
+      "typical_duration": "0.3s–0.6s",
+      "function": "emphasis",
+      "training_note": "The absence of breath is the signal. The listener unconsciously holds their own breath. Use sparingly — this is the most powerful breath pattern and loses force with repetition."
+    },
+    {
+      "type_id": "release_breath",
+      "name": "Release Breath",
+      "description": "Gentle exhalation after the final word of a passage. Signals completion without abruptness. The voice lands.",
+      "position": "post_passage",
+      "audibility": "soft",
+      "typical_duration": "0.4s–0.8s",
+      "function": "closure",
+      "training_note": "Not a sigh. Not performative. The natural release of air after the last word has been given. The listener knows: it is finished."
+    },
+    {
+      "type_id": "ceremonial_breath",
+      "name": "Ceremonial Breath",
+      "description": "Deep, audible breath used in sacred, ritual, or contemplative speech. The breath itself is part of the message. Found in Hawaiian oli, Lakota prayer, and other traditions where breath carries mana, spirit, or life force.",
+      "position": "any",
+      "audibility": "full",
+      "typical_duration": "0.8s–1.6s",
+      "function": "sacred",
+      "training_note": "This breath is not preparation for speech — it IS speech. In traditions where breath is life force, reducing it to a mechanical function is disrespectful. The breath should be heard as itself, not as a gap between words."
+    }
+  ],
+
+  "breath_parameters": {
+    "breath_to_speech_ratio": {
+      "description": "Proportion of total vocalization time occupied by breath events",
+      "range": "0.05–0.30",
+      "unit": "ratio",
+      "low_example": "0.05 — field-mode: minimal breath, tight delivery",
+      "mid_example": "0.15 — symbolic-monotone: balanced breath, even pacing",
+      "high_example": "0.30 — hawaiian-oli: breath-structured, breath is primary architecture"
+    },
+    "breath_regularity": {
+      "description": "How predictable the breath timing pattern is across a passage",
+      "values": ["metronomic", "regular", "organic", "irregular", "breath_led"],
+      "metronomic": "Machine-like regularity. Used in debug-tone, field-mode.",
+      "regular": "Predictable but not rigid. Used in symbolic-monotone, autism-clarity.",
+      "organic": "Natural variation within a stable pattern. Most modes.",
+      "irregular": "Breath responds to content weight, not clock. Elder-tone, lakota-oral.",
+      "breath_led": "Speech follows breath, not the reverse. Hawaiian-oli, silent-echo, ceremonial contexts."
+    },
+    "breath_depth": {
+      "description": "Perceived depth of inhalation — maps to resonance preparation and vocal weight",
+      "values": ["shallow", "moderate", "deep", "diaphragmatic"],
+      "shallow": "Quick, efficient. Field-mode, debug-tone.",
+      "moderate": "Normal conversational depth. Most modes.",
+      "deep": "Full lung engagement. Elder-tone, lakota-oral, gaelic-bardic.",
+      "diaphragmatic": "Deep belly breath, audible settling. Ceremonial modes, aramaic-liturgical."
+    }
+  },
+
+  "cultural_breath_notes": {
+    "hawaiian_oli": "In oli tradition, the breath defines the phrase. You speak until the breath ends, then breathe, then speak again. The breath is the meter.",
+    "lakota": "Breath before sacred speech is itself prayer. It gathers what will be said.",
+    "sami_joik": "Joik breath is circular — the end of one breath-phrase flows into the beginning of the next. There are no hard stops.",
+    "ainu_yukar": "Yukar breath is rhythmic and repetitive, supporting the pulsed narrative cadence. Breath marks episode boundaries.",
+    "aramaic_liturgical": "Liturgical breath is slow and reverential. The inhalation before a sacred phrase is preparation of the vessel that will carry the words."
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "framework": "Voice Production Training — Vocal Texture",
+  "version": "0.1-draft",
+  "description": "Vocal texture is the physical character of how voice is produced in the body. Where does the sound resonate? How does each word begin? What grain does the voice carry? These are not stylistic choices — they are the acoustic consequences of vocal production that different cultures, traditions, and bodies have refined over millennia.",
+
+  "dimensions": [
+    {
+      "dimension_id": "resonance",
+      "name": "Resonance",
+      "description": "Where in the vocal tract the sound is amplified. Determines the fundamental character of the voice.",
+      "values": [
+        {
+          "value": "chest",
+          "description": "Sound amplified in the chest cavity. Full, low, grounded. The voice of authority, gravity, and grounding.",
+          "acoustic_correlate": "Strong fundamental frequency, prominent low harmonics, vibration felt below the throat",
+          "cultural_context": "Lakota elder speech, Māori whaikōrero, deep storytelling traditions"
+        },
+        {
+          "value": "throat",
+          "description": "Sound shaped in the pharynx. Carries texture and grain. Can feel raw, honest, unpolished.",
+          "acoustic_correlate": "Mid-frequency emphasis, slight constriction quality, more harmonic complexity",
+          "cultural_context": "Ainu yukar recitation, some Gaelic sean-nós singing influence"
+        },
+        {
+          "value": "oral",
+          "description": "Sound shaped primarily in the mouth. The most neutral resonance — conversational, clear, centered.",
+          "acoustic_correlate": "Balanced formant distribution, clear vowel differentiation, standard articulation",
+          "cultural_context": "Default for most informational modes. Cherokee oratory, Quechua storytelling."
+        },
+        {
+          "value": "nasal",
+          "description": "Sound directed through the nasal passages. Adds buzz, projection, and a particular cultural warmth.",
+          "acoustic_correlate": "Nasal formant prominence around 250-300 Hz, characteristic resonance quality",
+          "cultural_context": "Present in some Diné (Navajo) speech patterns, certain Sámi vocal traditions"
+        },
+        {
+          "value": "head",
+          "description": "Sound resonating in the upper sinuses and skull. Light, elevated, carries over distance without force.",
+          "acoustic_correlate": "Higher formant emphasis, less fundamental energy, projection without volume",
+          "cultural_context": "Hawaiian oli chanting, some Buddhist and liturgical recitation traditions"
+        }
+      ]
+    },
+    {
+      "dimension_id": "grain",
+      "name": "Grain",
+      "description": "The surface texture of the voice. Like wood grain — some voices are polished smooth, others carry the texture of experience.",
+      "values": [
+        {
+          "value": "smooth",
+          "description": "No audible roughness. Clean, polished vocal production. The voice of precision and clarity.",
+          "acoustic_correlate": "Low jitter and shimmer, stable harmonic structure, minimal noise component",
+          "training_note": "Default for debug-tone, field-mode, symbolic-monotone, autism-clarity"
+        },
+        {
+          "value": "textured",
+          "description": "Slight natural roughness. The voice carries its history. Warmth through imperfection.",
+          "acoustic_correlate": "Slightly elevated jitter, gentle noise component, organic harmonic variation",
+          "training_note": "Appropriate for elder-tone, gaelic-bardic, lakota-oral. The texture is not a flaw — it is evidence of a voice that has been used."
+        },
+        {
+          "value": "rough",
+          "description": "Pronounced vocal grain. The voice scrapes. Carries weight through resistance, not polish.",
+          "acoustic_correlate": "Higher jitter and shimmer, significant noise component, irregular harmonic spacing",
+          "training_note": "Used sparingly. May appear in field-mode under stress conditions or elder voices with age-related vocal changes."
+        }
+      ]
+    },
+    {
+      "dimension_id": "onset",
+      "name": "Onset",
+      "description": "How each word or phrase begins. The attack of the voice — how quickly sound reaches full production.",
+      "values": [
+        {
+          "value": "soft",
+          "description": "Gradual onset. Voice rises into each word like a wave reaching shore. No hard edges.",
+          "acoustic_correlate": "Slow attack time (>50ms), breathy pre-voicing, gentle amplitude ramp",
+          "training_note": "Used in silent-echo, hawaiian-oli, aramaic-liturgical, elder-tone. The word arrives; it does not strike."
+        },
+        {
+          "value": "neutral",
+          "description": "Standard onset. Neither soft nor hard. Words begin clearly without being abrupt.",
+          "acoustic_correlate": "Moderate attack time (20-50ms), clean voicing onset, standard amplitude ramp",
+          "training_note": "Default for most modes. Symbolic-monotone, autism-clarity, quechua-oral."
+        },
+        {
+          "value": "crisp",
+          "description": "Quick, defined onset. Each word has a clear beginning. Consonants are fully articulated from the start.",
+          "acoustic_correlate": "Fast attack time (<20ms), no pre-voicing, sharp amplitude onset",
+          "training_note": "Used in field-mode, debug-tone, hard-of-hearing, blind-nav. Clarity of word boundaries is functional, not stylistic."
+        }
+      ]
+    },
+    {
+      "dimension_id": "breathiness",
+      "name": "Breathiness",
+      "description": "How much unvoiced air is present in the vocal production. A measure of how close the voice is to breath.",
+      "values": [
+        {
+          "value": "clear",
+          "description": "No audible breath in the voice signal. All air is converted to vibration. Maximum efficiency.",
+          "acoustic_correlate": "Low noise floor, strong harmonic-to-noise ratio, complete vocal fold closure",
+          "training_note": "Default for field-mode, debug-tone, symbolic-monotone. Functional, efficient voice."
+        },
+        {
+          "value": "slightly_breathy",
+          "description": "A trace of air around the voice. Softens without obscuring. The voice breathes as it speaks.",
+          "acoustic_correlate": "Slightly elevated noise floor, gentle aspiration on vowels, incomplete closure",
+          "training_note": "Natural for elder-tone, sami-joik, gaelic-bardic. The breath is presence, not weakness."
+        },
+        {
+          "value": "breathy",
+          "description": "Significant breath component. Voice and air coexist. Near-whisper territory.",
+          "acoustic_correlate": "High noise floor, prominent aspiration, low harmonic-to-noise ratio",
+          "training_note": "Used in silent-echo. The voice is almost breath. Words form in the exhale rather than being carved from silence."
+        }
+      ]
+    },
+    {
+      "dimension_id": "register",
+      "name": "Register",
+      "description": "The vocal production mechanism. Determines the fundamental quality of how the voice vibrates.",
+      "values": [
+        {
+          "value": "modal",
+          "description": "Normal speaking voice. Full vocal fold vibration. The default register for nearly all modes.",
+          "acoustic_correlate": "Regular vocal fold vibration, balanced harmonics, standard pitch range",
+          "training_note": "Default for all modes except silent-echo. Modal voice is not boring — it is the stable ground everything else is measured against."
+        },
+        {
+          "value": "soft_modal",
+          "description": "Quieter modal voice with reduced subglottal pressure. Speaking voice at reduced volume without switching to whisper.",
+          "acoustic_correlate": "Reduced amplitude, slightly breathier than full modal, gentle vocal fold contact",
+          "training_note": "Used in elder-tone, lakota-oral, hawaiian-oli for passages requiring softness without losing vocal fold vibration."
+        },
+        {
+          "value": "whisper",
+          "description": "Unvoiced or partially voiced speech. Air passes through open vocal folds without full vibration.",
+          "acoustic_correlate": "Noise-based spectrum, no clear fundamental frequency, turbulent air flow",
+          "training_note": "Used in silent-echo. True whisper, not stage whisper. The voice gives up its vibration and speaks in breath alone."
+        }
+      ]
+    }
+  ],
+
+  "cultural_texture_notes": {
+    "note": "Vocal texture is culturally situated. What follows are observations, not prescriptions. Community correction is welcome.",
+    "observations": [
+      "Lakota elder speech often carries chest resonance with textured grain — the voice of a life lived on the land.",
+      "Hawaiian oli uses head resonance with soft onset — the voice lifts rather than pushes.",
+      "Ainu yukar carries throat resonance with rhythmic emphasis — the narrative pulses through the body.",
+      "Sámi joik often blends chest and nasal resonance — the voice vibrates in multiple chambers simultaneously.",
+      "Scottish Gaelic bardic tradition values a slightly breathy, textured voice — the voice of someone remembering.",
+      "Aramaic liturgical recitation uses deep chest resonance with extremely soft onset — the voice arrives from stillness.",
+      "Diné ceremonial speech uses precise oral resonance with controlled nasal quality — tonal precision requires centered placement.",
+      "Māori whaikōrero projects through oral and chest resonance — the voice must reach the far wall of the wharenui."
+    ]
+  }
+}

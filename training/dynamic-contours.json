@@ -1,0 +1,161 @@
+{
+  "framework": "Voice Production Training — Dynamic Contours",
+  "version": "0.1-draft",
+  "description": "Dynamic contours define how energy moves through speech over time. Not what is said, not how it is textured, but how its force rises, falls, holds, and releases across phrases and passages. This is the shape of speech — the architecture of its energy.",
+
+  "dimensions": [
+    {
+      "dimension_id": "loudness_range",
+      "name": "Loudness Range",
+      "description": "The span between the quietest and loudest moments in a passage. A narrow range creates evenness. A wide range creates landscape.",
+      "values": [
+        {
+          "value": "whisper_narrow",
+          "description": "Entire passage stays within whisper-to-soft range. Almost no loudness variation.",
+          "db_range": "3–6 dB",
+          "used_by": ["silent-echo"],
+          "training_note": "Loudness variation is almost imperceptible. The listener must lean in. The voice does not project — it invites."
+        },
+        {
+          "value": "narrow",
+          "description": "Small loudness variation. Even, controlled, predictable. No surprises.",
+          "db_range": "6–10 dB",
+          "used_by": ["symbolic-monotone", "autism-clarity", "field-mode", "debug-tone", "add-focus"],
+          "training_note": "Consistency is the signal. The listener can rely on steady volume. Critical for neurodivergent and hearing-accessibility modes."
+        },
+        {
+          "value": "moderate",
+          "description": "Natural conversational range. Some variation for emphasis but no dramatic shifts.",
+          "db_range": "10–15 dB",
+          "used_by": ["elder-tone", "tsalagi-voice", "quechua-oral", "dine-oral", "gaelic-bardic", "adhd-flow"],
+          "training_note": "Enough range to mark emphasis naturally but not enough to startle or fatigue."
+        },
+        {
+          "value": "oratorical",
+          "description": "Wider range reflecting formal speech that must fill a physical space. The voice has landscape.",
+          "db_range": "15–20 dB",
+          "used_by": ["maori-whaikorero", "lakota-oral"],
+          "training_note": "This is the range of a voice addressing a marae or a gathering. The quiet moments are genuinely quiet; the strong moments carry without shouting."
+        }
+      ]
+    },
+    {
+      "dimension_id": "energy_arc",
+      "name": "Energy Arc",
+      "description": "The shape of energy across an entire passage — how force builds, sustains, and resolves from beginning to end.",
+      "values": [
+        {
+          "value": "flat",
+          "description": "Energy stays constant throughout. No build, no decay. Pure evenness.",
+          "shape": "────────────",
+          "used_by": ["symbolic-monotone", "autism-clarity", "field-mode"],
+          "training_note": "Predictability IS the feature. The listener never has to adjust to energy shifts."
+        },
+        {
+          "value": "gradual_build",
+          "description": "Energy slowly increases through the passage. The voice gathers force as it progresses.",
+          "shape": "___──────────",
+          "used_by": ["maori-whaikorero", "gaelic-bardic"],
+          "training_note": "Reflects oratorical traditions where the speaker builds toward the heart of the message."
+        },
+        {
+          "value": "gradual_decay",
+          "description": "Energy slowly decreases through the passage. The voice settles, lands, comes to rest.",
+          "shape": "──────────___",
+          "used_by": ["elder-tone", "lakota-oral", "aramaic-liturgical"],
+          "training_note": "The voice arrives with its fullest energy and gradually gives way to silence. The ending is the quietest part."
+        },
+        {
+          "value": "wave",
+          "description": "Energy rises and falls in a repeating pattern. Each phrase-unit has its own small arc.",
+          "shape": "~∿~∿~∿~∿~∿~",
+          "used_by": ["coherence-pulse", "adhd-flow", "ainu-yukar", "sami-joik"],
+          "training_note": "The rhythmic energy pattern sustains attention through predictable variation. Each wave is a complete breath-unit."
+        },
+        {
+          "value": "breath_shaped",
+          "description": "Energy follows the breath cycle exactly. Maximum energy at the start of each breath-phrase, decaying as air depletes.",
+          "shape": "╲  ╲  ╲  ╲  ",
+          "used_by": ["hawaiian-oli", "silent-echo"],
+          "training_note": "The most physically honest arc — energy is literally limited by the breath. When the air runs out, the phrase ends. No pushing past the breath."
+        }
+      ]
+    },
+    {
+      "dimension_id": "phrase_dynamics",
+      "name": "Phrase Dynamics",
+      "description": "Where within a single phrase (sentence or clause) the energy peaks. Determines the internal shape of every spoken unit.",
+      "values": [
+        {
+          "value": "front_loaded",
+          "description": "Energy peaks at the beginning of the phrase. The first words carry the most force. The phrase lands early and settles.",
+          "used_by": ["field-mode", "debug-tone"],
+          "training_note": "Efficient for information delivery. The key content arrives first with maximum clarity."
+        },
+        {
+          "value": "center_weighted",
+          "description": "Energy peaks in the middle of the phrase. A natural build-and-release within each sentence.",
+          "used_by": ["elder-tone", "tsalagi-voice", "quechua-oral", "dine-oral"],
+          "training_note": "The most natural speech dynamic. The voice gathers to its center point, then resolves."
+        },
+        {
+          "value": "end_weighted",
+          "description": "Energy builds toward the end of the phrase. The final words carry the most weight. Declarative power at closure.",
+          "used_by": ["maori-whaikorero", "gaelic-bardic", "lakota-oral"],
+          "training_note": "The phrase resolves with authority. The last word is the heaviest. Pairs naturally with falling inflection."
+        },
+        {
+          "value": "even_distributed",
+          "description": "No energy peak within the phrase. Every word receives equal force. Flat, democratic distribution.",
+          "used_by": ["symbolic-monotone", "autism-clarity", "add-focus", "hard-of-hearing"],
+          "training_note": "No word is privileged by energy. The listener gives equal attention to each word. Critical for modes where predictability supports comprehension."
+        },
+        {
+          "value": "pulse_points",
+          "description": "Energy spikes at specific structural points within the phrase, with lower energy between them. A dotted pattern.",
+          "used_by": ["coherence-pulse", "adhd-flow", "ainu-yukar"],
+          "training_note": "The pulses mark structural significance. Between pulses, the voice relaxes. The listener's attention follows the pulse pattern."
+        }
+      ]
+    },
+    {
+      "dimension_id": "spectral_warmth",
+      "name": "Spectral Warmth",
+      "description": "The balance of low-frequency to high-frequency energy in the voice signal over time. Determines whether the voice feels warm and full or clear and bright at any given moment.",
+      "values": [
+        {
+          "value": "warm_constant",
+          "description": "Consistently warm spectral balance throughout. Low frequencies dominate.",
+          "used_by": ["elder-tone", "lakota-oral", "aramaic-liturgical"],
+          "training_note": "The voice never thins out. Warmth is structural, not decorative."
+        },
+        {
+          "value": "neutral_constant",
+          "description": "Balanced spectral content throughout. No warmth or brightness bias.",
+          "used_by": ["symbolic-monotone", "debug-tone", "autism-clarity", "tsalagi-voice"],
+          "training_note": "Transparency. The voice does not color the information."
+        },
+        {
+          "value": "bright_constant",
+          "description": "Consistently brighter spectral balance. Higher frequencies more prominent.",
+          "used_by": ["field-mode", "blind-nav"],
+          "training_note": "Brightness aids intelligibility in noisy environments and for auditory-primary listeners."
+        },
+        {
+          "value": "warm_to_neutral",
+          "description": "Starts warm, settles to neutral as the passage progresses.",
+          "used_by": ["gaelic-bardic", "sami-joik"],
+          "training_note": "The voice begins with fullness and clarifies as it continues. Opening warmth, closing clarity."
+        },
+        {
+          "value": "breath_modulated",
+          "description": "Spectral warmth follows the breath cycle — warmer at the start of each breath, brighter as air depletes.",
+          "used_by": ["hawaiian-oli", "silent-echo"],
+          "training_note": "A natural acoustic phenomenon. Full lungs produce warmer resonance; depleting air creates thinner, brighter sound."
+        }
+      ]
+    }
+  ],
+
+  "anti_performative_constraint": "Dynamic contours exist to serve the content and the listener, not to create emotional effect. A gradual_build is not excitement — it is the natural shape of an argument gathering force. A breath_shaped arc is not vulnerability — it is the honest limit of human air. These contours describe physics and tradition, not affect."
+}

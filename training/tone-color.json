@@ -1,0 +1,127 @@
+{
+  "framework": "Voice Production Training — Tone Color",
+  "version": "0.1-draft",
+  "description": "Tone color is the character of a voice independent of pitch or rhythm. It is what makes a voice feel warm or clear, heavy or light, near or distant. This specification defines five dimensions of tonal quality that synthesis models can target. Tone color is not emotion — it is the acoustic signature of how voice is produced in the body.",
+
+  "dimensions": [
+    {
+      "dimension_id": "warmth",
+      "name": "Warmth",
+      "description": "The perceived thermal quality of voice. Warm voice has more low-frequency energy, fuller harmonics, and softer onset. Cool voice is clearer, thinner, more precise.",
+      "spectrum": ["cool", "neutral", "warm", "deep_warm"],
+      "acoustic_correlates": {
+        "cool": "Higher spectral center of gravity, less low-frequency energy, crisp consonants",
+        "neutral": "Balanced spectral distribution, no emphasis on warmth or clarity",
+        "warm": "Lower spectral center, prominent fundamental and low harmonics, soft consonant onset",
+        "deep_warm": "Very low spectral center, chest resonance dominant, vowels carry more energy than consonants"
+      },
+      "training_note": "Warmth is not friendliness. A warm voice in elder-tone carries gravity. A warm voice in aramaic-liturgical carries reverence. The warmth is physical, not social."
+    },
+    {
+      "dimension_id": "weight",
+      "name": "Weight",
+      "description": "The perceived gravitational quality of voice. Heavy voice feels grounded, anchored, unhurried. Light voice feels agile, effortless, floating.",
+      "spectrum": ["light", "balanced", "grounded", "heavy"],
+      "acoustic_correlates": {
+        "light": "Higher pitch center, faster articulation, less duration on stressed syllables",
+        "balanced": "Moderate pitch, even stress distribution",
+        "grounded": "Lower pitch tendency, longer stressed syllables, deliberate articulation",
+        "heavy": "Low pitch, maximum duration on stressed syllables, slow onset, each word lands"
+      },
+      "training_note": "Weight is not volume. A whispered voice can carry enormous weight through duration and placement. Silent-echo mode is low-volume but high-weight."
+    },
+    {
+      "dimension_id": "brightness",
+      "name": "Brightness",
+      "description": "The perceived luminosity of voice. Bright voice cuts through, projects, arrives quickly. Dark voice recedes, enfolds, takes time to reach the listener.",
+      "spectrum": ["dark", "shaded", "neutral", "bright", "crystalline"],
+      "acoustic_correlates": {
+        "dark": "Attenuated high frequencies, rounded vowels, back-of-mouth placement",
+        "shaded": "Slightly attenuated highs, soft edges on consonants",
+        "neutral": "Full spectrum, no emphasis in any direction",
+        "bright": "Prominent upper harmonics, forward placement, clear sibilants",
+        "crystalline": "Maximum high-frequency clarity, precise articulation, each phoneme distinct"
+      },
+      "training_note": "Brightness is appropriate for clarity-critical modes (blind-nav, debug-tone). Darkness is appropriate for contemplative or sacred modes (silent-echo, aramaic-liturgical). Neither is better — they serve different listening contexts."
+    },
+    {
+      "dimension_id": "clarity",
+      "name": "Clarity",
+      "description": "The transparency of voice — how easily each word is distinguished. Distinct from brightness: a voice can be dark and clear (low resonance, precise articulation) or bright and veiled (high energy, blurred boundaries).",
+      "spectrum": ["veiled", "soft_focus", "clear", "precise", "hyper_articulated"],
+      "acoustic_correlates": {
+        "veiled": "Blurred word boundaries, connected speech, vowel-dominant. Used in contemplative modes.",
+        "soft_focus": "Gentle articulation, words distinguishable but not sharp. Natural conversation.",
+        "clear": "Standard articulation, all phonemes distinguishable at normal attention.",
+        "precise": "Enhanced articulation, slight pause between words, consonants fully formed.",
+        "hyper_articulated": "Maximum phoneme distinction, each word isolated. For hearing-impaired contexts."
+      },
+      "training_note": "Hard-of-hearing mode needs hyper_articulated clarity. Dyslexia-steady needs precise clarity with slower delivery. Hawaiian-oli needs veiled clarity — the words flow into each other as breath flows."
+    },
+    {
+      "dimension_id": "presence",
+      "name": "Presence",
+      "description": "The perceived spatial distance of voice. Intimate voice feels close to the ear, as if spoken for one person. Projected voice fills a space, addressing a group or the horizon.",
+      "spectrum": ["distant", "centered", "near", "intimate", "internal"],
+      "acoustic_correlates": {
+        "distant": "More reverb, softer attack, reduced high frequencies. Voice is coming from across the room.",
+        "centered": "Balanced, natural distance. Voice is in front of you at conversational range.",
+        "near": "Less reverb, warmer low end, closer proximity feel. Voice is beside you.",
+        "intimate": "Minimal reverb, full low-frequency presence, whisper-adjacent. Voice is at your ear.",
+        "internal": "Near-whisper, maximum proximity, almost inside the listener's head. For contemplative or biofeedback modes."
+      },
+      "training_note": "Presence is not volume. A projected voice (distant/centered) can be quiet. An intimate voice can carry authority. Maori-whaikorero is centered-to-projected (marae oratory addresses the space). Silent-echo is intimate-to-internal."
+    }
+  ],
+
+  "compound_profiles": {
+    "description": "Common combinations of tone color dimensions that form recognizable vocal characters.",
+    "profiles": [
+      {
+        "name": "Grounded Authority",
+        "warmth": "warm",
+        "weight": "grounded",
+        "brightness": "neutral",
+        "clarity": "clear",
+        "presence": "centered",
+        "used_by": ["elder-tone", "maori-whaikorero", "lakota-oral"]
+      },
+      {
+        "name": "Clinical Precision",
+        "warmth": "neutral",
+        "weight": "balanced",
+        "brightness": "bright",
+        "clarity": "precise",
+        "presence": "centered",
+        "used_by": ["debug-tone", "field-mode", "add-focus"]
+      },
+      {
+        "name": "Sacred Depth",
+        "warmth": "deep_warm",
+        "weight": "heavy",
+        "brightness": "dark",
+        "clarity": "veiled",
+        "presence": "intimate",
+        "used_by": ["silent-echo", "aramaic-liturgical", "hawaiian-oli"]
+      },
+      {
+        "name": "Steady Clarity",
+        "warmth": "neutral",
+        "weight": "balanced",
+        "brightness": "neutral",
+        "clarity": "clear",
+        "presence": "centered",
+        "used_by": ["symbolic-monotone", "autism-clarity", "quechua-oral"]
+      },
+      {
+        "name": "Accessible Signal",
+        "warmth": "warm",
+        "weight": "grounded",
+        "brightness": "bright",
+        "clarity": "hyper_articulated",
+        "presence": "near",
+        "used_by": ["hard-of-hearing", "blind-nav", "dyslexia-steady"]
+      }
+    ]
+  }
+}
