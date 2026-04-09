@@ -1,0 +1,778 @@
+{
+  "framework": "Voice Production Training — Synthesis Targets",
+  "version": "0.1-draft",
+  "description": "This file maps every voice mode to its production-level targets across all five acoustic dimensions. It is the bridge between protocol (what to do) and production (how to sound). Each entry is a complete vocal identity that a synthesis engine can target.",
+
+  "targets": [
+    {
+      "mode_id": "symbolic-monotone",
+      "mode_name": "Symbolic Monotone",
+      "breath": {
+        "primary_types": ["phrase_breath", "boundary_breath"],
+        "breath_to_speech_ratio": 0.12,
+        "breath_regularity": "regular",
+        "breath_depth": "moderate"
+      },
+      "tone_color": {
+        "warmth": "neutral",
+        "weight": "balanced",
+        "brightness": "neutral",
+        "clarity": "clear",
+        "presence": "centered"
+      },
+      "pause_emphasis": {
+        "primary_pause_types": ["clause_pause", "sentence_pause"],
+        "emphasis_method": "weight_pause",
+        "silence_quality": "transitional"
+      },
+      "vocal_texture": {
+        "resonance": "oral",
+        "grain": "smooth",
+        "onset": "neutral",
+        "breathiness": "clear",
+        "register": "modal"
+      },
+      "dynamics": {
+        "loudness_range": "narrow",
+        "energy_arc": "flat",
+        "phrase_dynamics": "even_distributed",
+        "spectral_warmth": "neutral_constant"
+      }
+    },
+    {
+      "mode_id": "field-mode",
+      "mode_name": "Field Mode",
+      "breath": {
+        "primary_types": ["phrase_breath"],
+        "breath_to_speech_ratio": 0.06,
+        "breath_regularity": "metronomic",
+        "breath_depth": "shallow"
+      },
+      "tone_color": {
+        "warmth": "neutral",
+        "weight": "balanced",
+        "brightness": "bright",
+        "clarity": "precise",
+        "presence": "centered"
+      },
+      "pause_emphasis": {
+        "primary_pause_types": ["micro_pause", "clause_pause"],
+        "emphasis_method": "articulation_pause",
+        "silence_quality": "transitional"
+      },
+      "vocal_texture": {
+        "resonance": "oral",
+        "grain": "smooth",
+        "onset": "crisp",
+        "breathiness": "clear",
+        "register": "modal"
+      },
+      "dynamics": {
+        "loudness_range": "narrow",
+        "energy_arc": "flat",
+        "phrase_dynamics": "front_loaded",
+        "spectral_warmth": "bright_constant"
+      }
+    },
+    {
+      "mode_id": "elder-tone",
+      "mode_name": "Elder Tone",
+      "breath": {
+        "primary_types": ["boundary_breath", "section_breath", "held_breath"],
+        "breath_to_speech_ratio": 0.22,
+        "breath_regularity": "irregular",
+        "breath_depth": "deep"
+      },
+      "tone_color": {
+        "warmth": "warm",
+        "weight": "grounded",
+        "brightness": "neutral",
+        "clarity": "clear",
+        "presence": "centered"
+      },
+      "pause_emphasis": {
+        "primary_pause_types": ["weight_pause", "sentence_pause", "structural_pause"],
+        "emphasis_method": "weight_pause",
+        "silence_quality": "open"
+      },
+      "vocal_texture": {
+        "resonance": "chest",
+        "grain": "textured",
+        "onset": "soft",
+        "breathiness": "slightly_breathy",
+        "register": "modal"
+      },
+      "dynamics": {
+        "loudness_range": "moderate",
+        "energy_arc": "gradual_decay",
+        "phrase_dynamics": "center_weighted",
+        "spectral_warmth": "warm_constant"
+      }
+    },
+    {
+      "mode_id": "silent-echo",
+      "mode_name": "Silent Echo",
+      "breath": {
+        "primary_types": ["ceremonial_breath", "boundary_breath", "release_breath"],
+        "breath_to_speech_ratio": 0.30,
+        "breath_regularity": "breath_led",
+        "breath_depth": "diaphragmatic"
+      },
+      "tone_color": {
+        "warmth": "deep_warm",
+        "weight": "heavy",
+        "brightness": "dark",
+        "clarity": "veiled",
+        "presence": "internal"
+      },
+      "pause_emphasis": {
+        "primary_pause_types": ["sacred_pause", "structural_pause"],
+        "emphasis_method": "sacred_pause",
+        "silence_quality": "still"
+      },
+      "vocal_texture": {
+        "resonance": "chest",
+        "grain": "smooth",
+        "onset": "soft",
+        "breathiness": "breathy",
+        "register": "whisper"
+      },
+      "dynamics": {
+        "loudness_range": "whisper_narrow",
+        "energy_arc": "breath_shaped",
+        "phrase_dynamics": "even_distributed",
+        "spectral_warmth": "breath_modulated"
+      }
+    },
+    {
+      "mode_id": "debug-tone",
+      "mode_name": "Debug Tone",
+      "breath": {
+        "primary_types": ["phrase_breath", "boundary_breath"],
+        "breath_to_speech_ratio": 0.10,
+        "breath_regularity": "metronomic",
+        "breath_depth": "moderate"
+      },
+      "tone_color": {
+        "warmth": "neutral",
+        "weight": "balanced",
+        "brightness": "bright",
+        "clarity": "precise",
+        "presence": "centered"
+      },
+      "pause_emphasis": {
+        "primary_pause_types": ["articulation_pause", "clause_pause"],
+        "emphasis_method": "articulation_pause",
+        "silence_quality": "transitional"
+      },
+      "vocal_texture": {
+        "resonance": "oral",
+        "grain": "smooth",
+        "onset": "crisp",
+        "breathiness": "clear",
+        "register": "modal"
+      },
+      "dynamics": {
+        "loudness_range": "narrow",
+        "energy_arc": "flat",
+        "phrase_dynamics": "front_loaded",
+        "spectral_warmth": "neutral_constant"
+      }
+    },
+    {
+      "mode_id": "coherence-pulse",
+      "mode_name": "Coherence Pulse",
+      "breath": {
+        "primary_types": ["phrase_breath", "boundary_breath"],
+        "breath_to_speech_ratio": 0.14,
+        "breath_regularity": "regular",
+        "breath_depth": "moderate"
+      },
+      "tone_color": {
+        "warmth": "neutral",
+        "weight": "balanced",
+        "brightness": "neutral",
+        "clarity": "clear",
+        "presence": "centered"
+      },
+      "pause_emphasis": {
+        "primary_pause_types": ["micro_pause", "weight_pause"],
+        "emphasis_method": "weight_pause",
+        "silence_quality": "held"
+      },
+      "vocal_texture": {
+        "resonance": "oral",
+        "grain": "smooth",
+        "onset": "neutral",
+        "breathiness": "clear",
+        "register": "modal"
+      },
+      "dynamics": {
+        "loudness_range": "narrow",
+        "energy_arc": "wave",
+        "phrase_dynamics": "pulse_points",
+        "spectral_warmth": "neutral_constant"
+      }
+    },
+    {
+      "mode_id": "add-focus",
+      "mode_name": "ADD Focus",
+      "breath": {
+        "primary_types": ["phrase_breath", "boundary_breath"],
+        "breath_to_speech_ratio": 0.14,
+        "breath_regularity": "regular",
+        "breath_depth": "moderate"
+      },
+      "tone_color": {
+        "warmth": "neutral",
+        "weight": "balanced",
+        "brightness": "bright",
+        "clarity": "precise",
+        "presence": "near"
+      },
+      "pause_emphasis": {
+        "primary_pause_types": ["clause_pause", "sentence_pause"],
+        "emphasis_method": "weight_pause",
+        "silence_quality": "transitional"
+      },
+      "vocal_texture": {
+        "resonance": "oral",
+        "grain": "smooth",
+        "onset": "neutral",
+        "breathiness": "clear",
+        "register": "modal"
+      },
+      "dynamics": {
+        "loudness_range": "narrow",
+        "energy_arc": "flat",
+        "phrase_dynamics": "even_distributed",
+        "spectral_warmth": "neutral_constant"
+      }
+    },
+    {
+      "mode_id": "adhd-flow",
+      "mode_name": "ADHD Flow",
+      "breath": {
+        "primary_types": ["phrase_breath"],
+        "breath_to_speech_ratio": 0.10,
+        "breath_regularity": "regular",
+        "breath_depth": "moderate"
+      },
+      "tone_color": {
+        "warmth": "neutral",
+        "weight": "balanced",
+        "brightness": "neutral",
+        "clarity": "clear",
+        "presence": "near"
+      },
+      "pause_emphasis": {
+        "primary_pause_types": ["micro_pause", "clause_pause"],
+        "emphasis_method": "weight_pause",
+        "silence_quality": "held"
+      },
+      "vocal_texture": {
+        "resonance": "oral",
+        "grain": "smooth",
+        "onset": "neutral",
+        "breathiness": "clear",
+        "register": "modal"
+      },
+      "dynamics": {
+        "loudness_range": "moderate",
+        "energy_arc": "wave",
+        "phrase_dynamics": "pulse_points",
+        "spectral_warmth": "neutral_constant"
+      }
+    },
+    {
+      "mode_id": "autism-clarity",
+      "mode_name": "Autism Clarity",
+      "breath": {
+        "primary_types": ["boundary_breath", "clause_pause"],
+        "breath_to_speech_ratio": 0.16,
+        "breath_regularity": "regular",
+        "breath_depth": "moderate"
+      },
+      "tone_color": {
+        "warmth": "neutral",
+        "weight": "balanced",
+        "brightness": "neutral",
+        "clarity": "clear",
+        "presence": "centered"
+      },
+      "pause_emphasis": {
+        "primary_pause_types": ["clause_pause", "sentence_pause"],
+        "emphasis_method": "weight_pause",
+        "silence_quality": "open"
+      },
+      "vocal_texture": {
+        "resonance": "oral",
+        "grain": "smooth",
+        "onset": "neutral",
+        "breathiness": "clear",
+        "register": "modal"
+      },
+      "dynamics": {
+        "loudness_range": "narrow",
+        "energy_arc": "flat",
+        "phrase_dynamics": "even_distributed",
+        "spectral_warmth": "neutral_constant"
+      }
+    },
+    {
+      "mode_id": "blind-nav",
+      "mode_name": "Blind Navigation",
+      "breath": {
+        "primary_types": ["phrase_breath", "boundary_breath", "section_breath"],
+        "breath_to_speech_ratio": 0.15,
+        "breath_regularity": "regular",
+        "breath_depth": "moderate"
+      },
+      "tone_color": {
+        "warmth": "warm",
+        "weight": "grounded",
+        "brightness": "bright",
+        "clarity": "hyper_articulated",
+        "presence": "near"
+      },
+      "pause_emphasis": {
+        "primary_pause_types": ["articulation_pause", "structural_pause"],
+        "emphasis_method": "articulation_pause",
+        "silence_quality": "transitional"
+      },
+      "vocal_texture": {
+        "resonance": "oral",
+        "grain": "smooth",
+        "onset": "crisp",
+        "breathiness": "clear",
+        "register": "modal"
+      },
+      "dynamics": {
+        "loudness_range": "narrow",
+        "energy_arc": "flat",
+        "phrase_dynamics": "even_distributed",
+        "spectral_warmth": "bright_constant"
+      }
+    },
+    {
+      "mode_id": "dyslexia-steady",
+      "mode_name": "Dyslexia Steady",
+      "breath": {
+        "primary_types": ["boundary_breath", "section_breath"],
+        "breath_to_speech_ratio": 0.20,
+        "breath_regularity": "organic",
+        "breath_depth": "deep"
+      },
+      "tone_color": {
+        "warmth": "warm",
+        "weight": "grounded",
+        "brightness": "neutral",
+        "clarity": "precise",
+        "presence": "near"
+      },
+      "pause_emphasis": {
+        "primary_pause_types": ["articulation_pause", "sentence_pause"],
+        "emphasis_method": "articulation_pause",
+        "silence_quality": "open"
+      },
+      "vocal_texture": {
+        "resonance": "chest",
+        "grain": "smooth",
+        "onset": "neutral",
+        "breathiness": "clear",
+        "register": "modal"
+      },
+      "dynamics": {
+        "loudness_range": "narrow",
+        "energy_arc": "flat",
+        "phrase_dynamics": "even_distributed",
+        "spectral_warmth": "warm_constant"
+      }
+    },
+    {
+      "mode_id": "hard-of-hearing",
+      "mode_name": "Hard of Hearing",
+      "breath": {
+        "primary_types": ["boundary_breath", "section_breath"],
+        "breath_to_speech_ratio": 0.18,
+        "breath_regularity": "regular",
+        "breath_depth": "moderate"
+      },
+      "tone_color": {
+        "warmth": "warm",
+        "weight": "grounded",
+        "brightness": "bright",
+        "clarity": "hyper_articulated",
+        "presence": "near"
+      },
+      "pause_emphasis": {
+        "primary_pause_types": ["articulation_pause", "sentence_pause"],
+        "emphasis_method": "articulation_pause",
+        "silence_quality": "open"
+      },
+      "vocal_texture": {
+        "resonance": "oral",
+        "grain": "smooth",
+        "onset": "crisp",
+        "breathiness": "clear",
+        "register": "modal"
+      },
+      "dynamics": {
+        "loudness_range": "narrow",
+        "energy_arc": "flat",
+        "phrase_dynamics": "even_distributed",
+        "spectral_warmth": "bright_constant"
+      }
+    },
+    {
+      "mode_id": "sami-joik",
+      "mode_name": "Sámi Joik",
+      "breath": {
+        "primary_types": ["boundary_breath", "ceremonial_breath"],
+        "breath_to_speech_ratio": 0.22,
+        "breath_regularity": "organic",
+        "breath_depth": "deep"
+      },
+      "tone_color": {
+        "warmth": "warm",
+        "weight": "grounded",
+        "brightness": "neutral",
+        "clarity": "soft_focus",
+        "presence": "centered"
+      },
+      "pause_emphasis": {
+        "primary_pause_types": ["sentence_pause", "weight_pause"],
+        "emphasis_method": "weight_pause",
+        "silence_quality": "open"
+      },
+      "vocal_texture": {
+        "resonance": "chest",
+        "grain": "textured",
+        "onset": "soft",
+        "breathiness": "slightly_breathy",
+        "register": "modal"
+      },
+      "dynamics": {
+        "loudness_range": "moderate",
+        "energy_arc": "wave",
+        "phrase_dynamics": "center_weighted",
+        "spectral_warmth": "warm_to_neutral"
+      }
+    },
+    {
+      "mode_id": "dine-oral",
+      "mode_name": "Diné Oral Tradition",
+      "breath": {
+        "primary_types": ["onset_breath", "boundary_breath", "held_breath"],
+        "breath_to_speech_ratio": 0.18,
+        "breath_regularity": "organic",
+        "breath_depth": "deep"
+      },
+      "tone_color": {
+        "warmth": "neutral",
+        "weight": "grounded",
+        "brightness": "neutral",
+        "clarity": "clear",
+        "presence": "centered"
+      },
+      "pause_emphasis": {
+        "primary_pause_types": ["weight_pause", "sentence_pause"],
+        "emphasis_method": "weight_pause",
+        "silence_quality": "held"
+      },
+      "vocal_texture": {
+        "resonance": "oral",
+        "grain": "smooth",
+        "onset": "neutral",
+        "breathiness": "clear",
+        "register": "modal"
+      },
+      "dynamics": {
+        "loudness_range": "moderate",
+        "energy_arc": "gradual_decay",
+        "phrase_dynamics": "center_weighted",
+        "spectral_warmth": "neutral_constant"
+      }
+    },
+    {
+      "mode_id": "tsalagi-voice",
+      "mode_name": "Tsalagi Voice",
+      "breath": {
+        "primary_types": ["boundary_breath", "section_breath"],
+        "breath_to_speech_ratio": 0.16,
+        "breath_regularity": "organic",
+        "breath_depth": "moderate"
+      },
+      "tone_color": {
+        "warmth": "neutral",
+        "weight": "balanced",
+        "brightness": "neutral",
+        "clarity": "clear",
+        "presence": "centered"
+      },
+      "pause_emphasis": {
+        "primary_pause_types": ["sentence_pause", "weight_pause"],
+        "emphasis_method": "weight_pause",
+        "silence_quality": "open"
+      },
+      "vocal_texture": {
+        "resonance": "oral",
+        "grain": "smooth",
+        "onset": "neutral",
+        "breathiness": "clear",
+        "register": "modal"
+      },
+      "dynamics": {
+        "loudness_range": "moderate",
+        "energy_arc": "gradual_build",
+        "phrase_dynamics": "center_weighted",
+        "spectral_warmth": "neutral_constant"
+      }
+    },
+    {
+      "mode_id": "hawaiian-oli",
+      "mode_name": "Hawaiian Oli",
+      "breath": {
+        "primary_types": ["ceremonial_breath", "release_breath"],
+        "breath_to_speech_ratio": 0.28,
+        "breath_regularity": "breath_led",
+        "breath_depth": "diaphragmatic"
+      },
+      "tone_color": {
+        "warmth": "deep_warm",
+        "weight": "heavy",
+        "brightness": "dark",
+        "clarity": "veiled",
+        "presence": "centered"
+      },
+      "pause_emphasis": {
+        "primary_pause_types": ["sacred_pause", "structural_pause"],
+        "emphasis_method": "sacred_pause",
+        "silence_quality": "still"
+      },
+      "vocal_texture": {
+        "resonance": "head",
+        "grain": "smooth",
+        "onset": "soft",
+        "breathiness": "slightly_breathy",
+        "register": "soft_modal"
+      },
+      "dynamics": {
+        "loudness_range": "moderate",
+        "energy_arc": "breath_shaped",
+        "phrase_dynamics": "even_distributed",
+        "spectral_warmth": "breath_modulated"
+      }
+    },
+    {
+      "mode_id": "maori-whaikorero",
+      "mode_name": "Māori Whaikōrero",
+      "breath": {
+        "primary_types": ["onset_breath", "boundary_breath", "section_breath"],
+        "breath_to_speech_ratio": 0.18,
+        "breath_regularity": "organic",
+        "breath_depth": "deep"
+      },
+      "tone_color": {
+        "warmth": "warm",
+        "weight": "grounded",
+        "brightness": "neutral",
+        "clarity": "clear",
+        "presence": "centered"
+      },
+      "pause_emphasis": {
+        "primary_pause_types": ["weight_pause", "sentence_pause", "structural_pause"],
+        "emphasis_method": "weight_pause",
+        "silence_quality": "open"
+      },
+      "vocal_texture": {
+        "resonance": "chest",
+        "grain": "textured",
+        "onset": "neutral",
+        "breathiness": "clear",
+        "register": "modal"
+      },
+      "dynamics": {
+        "loudness_range": "oratorical",
+        "energy_arc": "gradual_build",
+        "phrase_dynamics": "end_weighted",
+        "spectral_warmth": "warm_constant"
+      }
+    },
+    {
+      "mode_id": "lakota-oral",
+      "mode_name": "Lakota Oral Tradition",
+      "breath": {
+        "primary_types": ["ceremonial_breath", "boundary_breath", "held_breath"],
+        "breath_to_speech_ratio": 0.25,
+        "breath_regularity": "irregular",
+        "breath_depth": "diaphragmatic"
+      },
+      "tone_color": {
+        "warmth": "warm",
+        "weight": "heavy",
+        "brightness": "shaded",
+        "clarity": "clear",
+        "presence": "centered"
+      },
+      "pause_emphasis": {
+        "primary_pause_types": ["sacred_pause", "weight_pause", "structural_pause"],
+        "emphasis_method": "sacred_pause",
+        "silence_quality": "still"
+      },
+      "vocal_texture": {
+        "resonance": "chest",
+        "grain": "textured",
+        "onset": "soft",
+        "breathiness": "slightly_breathy",
+        "register": "soft_modal"
+      },
+      "dynamics": {
+        "loudness_range": "oratorical",
+        "energy_arc": "gradual_decay",
+        "phrase_dynamics": "end_weighted",
+        "spectral_warmth": "warm_constant"
+      }
+    },
+    {
+      "mode_id": "ainu-yukar",
+      "mode_name": "Ainu Yukar",
+      "breath": {
+        "primary_types": ["boundary_breath", "section_breath"],
+        "breath_to_speech_ratio": 0.20,
+        "breath_regularity": "regular",
+        "breath_depth": "deep"
+      },
+      "tone_color": {
+        "warmth": "warm",
+        "weight": "grounded",
+        "brightness": "neutral",
+        "clarity": "clear",
+        "presence": "centered"
+      },
+      "pause_emphasis": {
+        "primary_pause_types": ["sentence_pause", "weight_pause"],
+        "emphasis_method": "weight_pause",
+        "silence_quality": "held"
+      },
+      "vocal_texture": {
+        "resonance": "throat",
+        "grain": "textured",
+        "onset": "neutral",
+        "breathiness": "clear",
+        "register": "modal"
+      },
+      "dynamics": {
+        "loudness_range": "moderate",
+        "energy_arc": "wave",
+        "phrase_dynamics": "pulse_points",
+        "spectral_warmth": "warm_to_neutral"
+      }
+    },
+    {
+      "mode_id": "quechua-oral",
+      "mode_name": "Quechua Oral Tradition",
+      "breath": {
+        "primary_types": ["boundary_breath", "section_breath"],
+        "breath_to_speech_ratio": 0.18,
+        "breath_regularity": "organic",
+        "breath_depth": "moderate"
+      },
+      "tone_color": {
+        "warmth": "neutral",
+        "weight": "balanced",
+        "brightness": "neutral",
+        "clarity": "clear",
+        "presence": "centered"
+      },
+      "pause_emphasis": {
+        "primary_pause_types": ["sentence_pause", "weight_pause"],
+        "emphasis_method": "weight_pause",
+        "silence_quality": "open"
+      },
+      "vocal_texture": {
+        "resonance": "oral",
+        "grain": "smooth",
+        "onset": "neutral",
+        "breathiness": "clear",
+        "register": "modal"
+      },
+      "dynamics": {
+        "loudness_range": "moderate",
+        "energy_arc": "gradual_decay",
+        "phrase_dynamics": "center_weighted",
+        "spectral_warmth": "neutral_constant"
+      }
+    },
+    {
+      "mode_id": "gaelic-bardic",
+      "mode_name": "Scottish Gaelic Bardic",
+      "breath": {
+        "primary_types": ["onset_breath", "boundary_breath", "held_breath"],
+        "breath_to_speech_ratio": 0.20,
+        "breath_regularity": "organic",
+        "breath_depth": "deep"
+      },
+      "tone_color": {
+        "warmth": "warm",
+        "weight": "grounded",
+        "brightness": "neutral",
+        "clarity": "clear",
+        "presence": "centered"
+      },
+      "pause_emphasis": {
+        "primary_pause_types": ["weight_pause", "sentence_pause", "invitation_pause"],
+        "emphasis_method": "weight_pause",
+        "silence_quality": "open"
+      },
+      "vocal_texture": {
+        "resonance": "chest",
+        "grain": "textured",
+        "onset": "soft",
+        "breathiness": "slightly_breathy",
+        "register": "modal"
+      },
+      "dynamics": {
+        "loudness_range": "moderate",
+        "energy_arc": "gradual_build",
+        "phrase_dynamics": "end_weighted",
+        "spectral_warmth": "warm_to_neutral"
+      }
+    },
+    {
+      "mode_id": "aramaic-liturgical",
+      "mode_name": "Aramaic Liturgical",
+      "breath": {
+        "primary_types": ["ceremonial_breath", "onset_breath", "release_breath"],
+        "breath_to_speech_ratio": 0.28,
+        "breath_regularity": "breath_led",
+        "breath_depth": "diaphragmatic"
+      },
+      "tone_color": {
+        "warmth": "deep_warm",
+        "weight": "heavy",
+        "brightness": "dark",
+        "clarity": "soft_focus",
+        "presence": "intimate"
+      },
+      "pause_emphasis": {
+        "primary_pause_types": ["sacred_pause", "structural_pause", "invitation_pause"],
+        "emphasis_method": "sacred_pause",
+        "silence_quality": "still"
+      },
+      "vocal_texture": {
+        "resonance": "chest",
+        "grain": "textured",
+        "onset": "soft",
+        "breathiness": "slightly_breathy",
+        "register": "soft_modal"
+      },
+      "dynamics": {
+        "loudness_range": "moderate",
+        "energy_arc": "gradual_decay",
+        "phrase_dynamics": "center_weighted",
+        "spectral_warmth": "warm_constant"
+      }
+    }
+  ]
+}
