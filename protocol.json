@@ -18,6 +18,81 @@
     "silence_respect": true,
     "interruptible": false
   },
+  "invariants": {
+    "description": "Held by every mode in every family. A mode file that violates one of these is not a Voice Integrity mode. Unlike default_settings, these are not overridable per mode.",
+    "upspeak": false,
+    "filler_enabled": false,
+    "emotion_simulation": false,
+    "silence_respect": true
+  },
+  "constraints": {
+    "pause_between_sentences": {
+      "min": "0.8s",
+      "max": "3.2s",
+      "default": "1.6s",
+      "observed_min": "0.8s",
+      "observed_max": "3.2s",
+      "note": "Range is honored by all 22 modes; field-mode sits at the floor and silent-echo at the ceiling."
+    }
+  },
+  "signal_priority": {
+    "description": "Degradation order under load. Listed most-expendable first; structure is never dropped.",
+    "order": ["tone", "pacing", "accuracy", "structure"]
+  },
+  "layers": {
+    "protocol": {
+      "path": "modes/",
+      "defines": "What voice should do — the 11-parameter schema."
+    },
+    "production": {
+      "path": "training/",
+      "defines": "How voice should sound — breath, tone color, pause grammar, texture, dynamics."
+    },
+    "synthesis": {
+      "path": null,
+      "defines": "What generates the sound. External; not specified by this protocol."
+    }
+  },
+  "mode_families": {
+    "core": {
+      "description": "Original logic-delivery modes.",
+      "modes": [
+        "symbolic-monotone",
+        "field-mode",
+        "elder-tone",
+        "silent-echo",
+        "debug-tone",
+        "coherence-pulse"
+      ]
+    },
+    "accessibility": {
+      "description": "Modes shaped around specific cognitive and sensory needs. The only family in which interruptible is generally true.",
+      "modes": [
+        "add-focus",
+        "adhd-flow",
+        "autism-clarity",
+        "blind-nav",
+        "dyslexia-steady",
+        "hard-of-hearing"
+      ]
+    },
+    "endangered_languages": {
+      "description": "Prosodic preservation of at-risk oral traditions. Draft approximations pending community review; see docs/endangered-languages.md.",
+      "status": "0.1-draft",
+      "modes": [
+        "sami-joik",
+        "dine-oral",
+        "tsalagi-voice",
+        "hawaiian-oli",
+        "maori-whaikorero",
+        "lakota-oral",
+        "ainu-yukar",
+        "quechua-oral",
+        "gaelic-bardic",
+        "aramaic-liturgical"
+      ]
+    }
+  },
   "available_modes": [
     "symbolic-monotone",
     "field-mode",
@@ -50,9 +125,19 @@
     "Custom symbolic vocal pipelines"
   ],
   "extensions": {
-    "sigils": true,
+    "sigils": false,
     "symbolic_mode_tags": true,
     "cultural_tone_tags": true
+  },
+  "planned_extensions": {
+    "sigils": "Declared available in v0.1 but never implemented; corrected to false 2026-08-14. Originally proposed in legacy/optional-extensions.md as a symbolic sigil and logic core.",
+    "auditory_trust_calibration": "Companion symbolic protocol proposed in legacy/optional-extensions.md. Not built.",
+    "backend_adapter": "training/synthesis-targets.json defines conditioning targets, but no adapter to OpenVoice, Coqui, or any other backend exists."
+  },
+  "validation": {
+    "command": "python3 tools/validate.py",
+    "record": "docs/audit-log.md",
+    "note": "tools/validate.py is the authoritative vocabulary for mode parameter enums. Prose docs describe it; where they disagree, the validator wins."
   },
   "tags": [
     "symbolic",
