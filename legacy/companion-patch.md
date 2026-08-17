@@ -1,3 +1,11 @@
+> **LEGACY — SUPERSEDED.** Original draft, committed `cc17ce6` (2025-08-23) as
+> `Example-companion-patch.md`. Superseded the same day by
+> [`docs/patch-protocol.md`](../docs/patch-protocol.md), which carries identical content in
+> cleaned markup. Retained as the origin record; see [`README.md`](README.md).
+> **Body below is unmodified. Cite the successor, not this file.**
+
+---
+
 Voice Integrity Patch Protocol v0.1
 
 Purpose

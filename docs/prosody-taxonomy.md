@@ -1,6 +1,6 @@
 # Prosody Taxonomy (Draft v0.1)
 
-This taxonomy defines prosodic indicators as **signal categories** for voice synthesis systems. It is designed to accompany `Needs-Diagnostic.md` and `Patch-Protocol.md` in the Voice Integrity Module, providing a structured framework for evaluating authenticity, closure, and accessibility in voice outputs.
+This taxonomy defines prosodic indicators as **signal categories** for voice synthesis systems. It is designed to accompany [`needs-diagnostic.md`](needs-diagnostic.md) and [`patch-protocol.md`](patch-protocol.md) in the Voice Integrity Module, providing a structured framework for evaluating authenticity, closure, and accessibility in voice outputs.
 
 ---
 
