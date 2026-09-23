@@ -2,7 +2,7 @@
 
 **Version:** VIP v0.1
 **Author:** JinnZ2 + GPT-4o
-**License:** MIT
+**License:** CC0-1.0
 **Status:** Active prototype
 
 ---
@@ -31,7 +31,7 @@ This system is built for those who think in compressed logic, symbolic systems, 
 voice-integrity-module/
 ├── CLAUDE.md                     ← Development guide and conventions
 ├── README.md                     ← You're here
-├── LICENSE                       ← MIT License
+├── LICENSE                       ← CC0 1.0 Universal
 ├── protocol.json                 ← Machine-readable protocol configuration
 ├── vip-spec-v0.1.md              ← Full protocol specification
 ├── docs/
@@ -166,4 +166,4 @@ interface compatibility.
 
 ## License
 
-MIT
+CC0-1.0
